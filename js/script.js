@@ -1,7 +1,8 @@
 $(function(){
 
-$("#mycard").click(function(){
-document.querySelector("#myCard").classList.toggle("flip");
+$('.flipper').on('click', function() {
+    $(this).toggleClass('clicked');
 });
+
 
 });
