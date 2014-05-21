@@ -22,3 +22,8 @@ $(".scrollBox").click(function() {
 
 });
 //end
+
+//slide
+
+
+

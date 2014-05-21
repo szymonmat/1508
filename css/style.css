@@ -1,3 +1,11 @@
+@font-face
+{
+font-family: Battersea;
+src: url(../resources/afbattersea.ttf);
+}
+
+
+
 *{
 -webkit-box-sizing:border-box;
 /* Safari/Chrome, other WebKit */
@@ -37,6 +45,8 @@ body{
 overflow:visible!important;
 background-color:white;
 line-height:1;
+font: 1.2rem Battersea, sans-serif;
+position: absolute;
 }
 ol, ul{
 list-style:none;
@@ -59,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 display:block;
 }
 body{
-font:1.2rem Helvetica, sans-serif;
+
 }
 .wrapper{
 width:100%;
@@ -71,7 +81,7 @@ color:inherit;
 /* Header
 -----------------------------------------------------------------------------*/
 header{
-color:white;
+color:black;
 display:table;
 padding:.9rem;
 padding-right:9rem;
@@ -83,63 +93,43 @@ clear:both;
 margin-right: 4rem;
 }
 .headWrap{
-color:white;
+
+color:black;
 font-size:1.8rem;
 margin:0 auto;
 width:60%;
 text-align:center;
-padding-top:50vh;
+padding-top:30vh;
 }
+
 /* Aside 
 -----------------------------------------------------------------------------*/
 .scroll{
 position:fixed;
-right:2rem;
+z-index: 1000;
+right:5rem;
 top:20%;
 height:auto;
-width:5.5vh;
-background-color:#E3E3E5;
-/*border-radius*/
--webkit-border-radius:.5rem;
-   -moz-border-radius:.5rem;
-        border-radius:.5rem;
-/*box-shadow*/
--webkit-box-shadow:.5px .5px 2px #9F9FA1;
-   -moz-box-shadow:.5px .5px 2px #9F9FA1;
-        box-shadow:.5px .5px 2px #9F9FA1;
+width:auto;
+line-height: 3rem;
+cursor: pointer;
 }
 .scrollBox{
-margin:.5rem auto;
-width:2.5vh;
-height:2.5vh;
-background-color:white;
-/*border-radius*/
--webkit-border-radius:.1rem;
-   -moz-border-radius:.1rem;
-        border-radius:.1rem;
-/*box-shadow*/
--webkit-box-shadow:.5px .5px 2px #9F9FA1;
-   -moz-box-shadow:.5px .5px 2px #9F9FA1;
-        box-shadow:.5px .5px 2px #9F9FA1;
-/*transition*/
--webkit-transition:background .4s ease-in-out;
-   -moz-transition:background .4s ease-in-out;
-     -o-transition:background .4s ease-in-out;
-        transition:background .4s ease-in-out;
+text-align:right;
 }
 .scrollBox:hover{
-background-color:#CCCCCF;
-/*box-shadow*/
--webkit-box-shadow:.5px .5px 2px #E8E8EB;
-   -moz-box-shadow:.5px .5px 2px #E8E8EB;
-        box-shadow:.5px .5px 2px #E8E8EB;
-/*929294
-79797A
-*/
-:;
+  color:red;
 }
 .scrollBoxClicked{
-background-color:#79797A;
+ color:red;
+}
+#logo{
+position:fixed;
+right: 0;
+top:0;
+height:20vh;
+width:auto;
+z-index: 1001;
 }
 /* Middle
 -----------------------------------------------------------------------------*/
@@ -151,43 +141,23 @@ display:table-cell;
 vertical-align:middle;
 }
 
+section
+{
+  position:relative;
+}
 
 
-.menu{
-font-size:1.3rem;
-width:20%;
-position:relative;
-}
-.subMenu{
-width:inherit;
-position:absolute;
-display:none;
-}
-.menu:hover{
-}
-.subMenu li:hover{
-color:black;
-}
-.subMenu li{
-font-size:1.1rem;
-padding:.7rem;
-padding-left:1rem;
-padding-right:1rem;
-width:100%;
-/*transition*/
--webkit-transition:background .4s, color .4s ease-in-out;
-   -moz-transition:background .4s, color .4s ease-in-out;
-     -o-transition:background .4s, color .4s ease-in-out;
-        transition:background .4s, color .4s ease-in-out;
-}
 .intro{
-background:url('../images/background.jpg') no-repeat;
+
 height:100vh;
 width:100%;
 max-height:1200px;
 }
 .headWrap span{
 font-size:1.4rem;
+}
+.headWrap{
+  font-size: 5rem;
 }
 .mainContent{
 /*box-shadow*/
@@ -265,7 +235,7 @@ margin:2vh 0 0 0;
 padding:3vh;
 width:49%;
 display:inline-block;
-background-color:white;
+background-color:black;
 }
 .boxElement h1{
 padding:3vh;
@@ -297,6 +267,46 @@ background-color:#EDECE8;
 .contentElement:nth-child(3n+1){
 background-color:#8DBCE3;
 }
+.slide{
+margin:0 auto;
+height:80vh;
+width:80%;
+background-color: green;
+position:absolute;
+
+
+
+}
+
+/*TEST*/
+
+body {
+    padding: 0px;    
+}
+
+#container {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  
+    text-align: center;
+
+}
+.box{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+
+
+}
+
 /* Footer
 -----------------------------------------------------------------------------*/
 footer{

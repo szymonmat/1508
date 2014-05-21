@@ -12,40 +12,43 @@
 	</head>
 
 	<body>
-		<aside class="scroll">
-			<div class="scrollBox" loc="section1"></div> 
-		<div class="scrollBox" loc="section2"></div> 
-		<div class="scrollBox" loc="section3"></div> 
-		<div class="scrollBox" loc="section4"></div> 
-		<div class="scrollBox" loc="section5"></div> 
-		<div class="scrollBox" loc="section6"></div> 
+		<!-- Signup form, update it with code you need-->
+		<img src="images/logo.png" id="logo">
+		<aside>
+			<form class="signUpForm">
+				<label for="name">First name:</label>
+				<input type="text" name="name"><br>
+
+				<label for="e-mail">E-mail adress:</label>
+				<input type="text" name="e-mail"><br>
+
+				<label for="telephone">Telephone nr. :</label>
+				<input type="text" name="telephone"><br>
+
+				<input type="button" value="submit" name="submit" id="submitButton">
+
+			</form>
 		</aside>
+<!-- Signup form-->
+	<aside class="scroll">
+
+			<nav class="menu">
+		<div class="scrollBox scrollBoxClicked" loc="section1">FRONT</div> 
+		<div class="scrollBox" loc="section2">ABOUT</div> 
+		<div class="scrollBox" loc="section3">SCHEDULE</div> 
+		<div class="scrollBox" loc="section4">FIND US</div> 
 	
+		</nav>
+		</aside>
 	
 	<div class="mainContent">
 		<section class="intro" id="section1">
-			<!-- header-->
-	<header>
-		<nav>
-			<ul class="menu">
-				<li>Menu
-					<ul class="subMenu">
-						<li>About us</li>
-						<li>For financial institutions</li>
-						<li>Customer support</li>
-						<li>Contact</li>
-					</ul>
-				</li>
-			</ul>
-		</nav>	
-	</header>
-		<!-- end -->
 			<div class="headWrap" >
 			<h1>
-				PayXO
+				1508 BIRTHDAY PARTY EVENT
 			</h1>
 			<span>
-				Painless payments designed for eStores
+				"Sucess and Failure"
 			
 			</span>
 			</div>
@@ -55,11 +58,18 @@
 		<section class="contentElement" id="section2">
 			
 			<div class="mainWrap">
-				<h2> The Company</h2>
+				<h2>The Party</h2>
 				<img src="images/1_img.jpg" alt="feat_img">
 
 				<article>
-					Our company specializes in providing integrated and payment and reporting solutions for e-stores. We are servicing many small businesses, ranging from 1 to ten employees, with yearly revenues between €100 thousand and €1.5 milion. 
+				Come and celebrate our birthday with us!<br /><br />
+
+1508 started out as a small company with only 6 employees, and now today, they have grown to 40 employees! They are a successful company, well loved by the community and all who work with them.<br /><br />
+
+1508 is hosting an event to celebrate the birthday of their company.
+The event will be held on the 15th of August at 1508. During the day, there will be guest speakers coming to talk to you about Success & Failure in their careers. At night, there will be a party to celebrate their birthday.<br /><br />
+
+Everyone is welcome to this free event. Please sign up as there are limited places available.
 				
 				</article>
 				
@@ -153,11 +163,19 @@
 				</div>
 
 		</section>
-		<section class="contentElement" id="section7">f</section>
+		<section class="contentElement" id="section7">
+
+			<div></div>
+		</section>
+
+    
+</div>
+		</section>
+
 		<footer>
 		</footer>	
 	</div>
-	
+
 
 
 		<!-- SCRIPT BLOCK-->
