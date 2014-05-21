@@ -84,7 +84,7 @@ a{
 }
 .logo{
 	background-color:#343A41;
-	height:10rem;
+	height:8rem;
 	width:100%;
 
 }
@@ -235,8 +235,8 @@ box-sizing:border-box-moz-box-sizing:border-box;
 }
 
 .flip-container, .front, .back{
-width:22rem!important;
-height:22rem!important;
+width:25rem!important;
+height:25rem!important;
 margin:0 auto;
 display:inline-block;
 box-sizing:border-box;	
@@ -245,9 +245,10 @@ margin-right:2rem;
 }
 
 
-.flip-container:hover .flipper, .flip-container.hover .flipper {
+ .flipper.clicked{
 
 		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
 }
 
 .flipper{
